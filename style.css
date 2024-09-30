@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+header {
+    height: 5vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #10144c;
+    text-align: center;
+}
+
+header nav {
+    opacity: .6
+}
+
+header nav a,
+i {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    margin-left: 40px;
+}
+
+header nav i {
+    font-size: 15px;
+}
+
+
+main {
+    background: linear-gradient(#10144c, #ffffff);
+    height: 100vh;
+    width: 100%;
+}
+
+#content {
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+#product h1 {
+    font-size: 130px;
+    font-family: sans-serif;
+    color: #fff;
+    margin-top: 150px;
+}
+
+#product h1 {
+    letter-spacing: -5px;
+    text-shadow: 0px 0px 20px #ffffff;
+    animation: puff-in-center 1s ease-in both
+
+}
+
+#product img {
+    width: 950px;
+    margin-top: -3.5%;
+}
+
+#product img {
+    animation: puff-in-center 1s ease-in both
+}
+
+@keyframes puff-in-center {
+    0% {
+        transform: scale(2);
+        filter: blur(4px);
+        opacity: 0
+    }
+
+    100% {
+        transform: scale(1);
+        filter: blur(0);
+        opacity: 1
+    }
+}
+
+#product .price {
+    margin-top: 6%;
+    animation: puff-in-center 1s ease-in both;
+
+
+}
+
+.price .see-price {
+    height: 40px;
+    width: 110px;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: #0071e3;
+    color: white;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+#valor{
+    font-size: 18px;
+    margin-top: 15px;
+    font-weight: 500;
+}
+#highlights{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15%;
+}
+
+#highlights h1{
+    font-size: 45px;
+    margin-left: 2%;
+
+}
+
+#highlights .link{
+    margin-right: 100px;
+
+}
+
+
+#highlights a, i {
+    font-size: 20px;
+    color: #0071e3;
+    text-decoration: none;
+}
+
+#highlights a:hover {
+    text-decoration:underline;
+}
+
