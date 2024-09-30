@@ -230,7 +230,7 @@ container {
     border-radius: 50px;
 }
 
-/* Grid */
+
 #grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -240,10 +240,6 @@ container {
 .grid-template-rows-1 {
     grid-template-rows: 50px 100px 50px 150px;
 }
-
-
-
-/* Grid Item */
 
 .item {
     margin: 5px;
