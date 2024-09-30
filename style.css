@@ -14,6 +14,7 @@ header {
     justify-content: space-evenly;
     background-color: #10144c;
     text-align: center;
+
 }
 
 header nav {
@@ -58,7 +59,6 @@ main {
     letter-spacing: -5px;
     text-shadow: 0px 0px 20px #ffffff;
     animation: puff-in-center 1s ease-in both
-
 }
 
 #product img {
@@ -103,12 +103,13 @@ main {
     cursor: pointer;
 }
 
-#valor{
+#valor {
     font-size: 18px;
     margin-top: 15px;
     font-weight: 500;
 }
-#highlights{
+
+#highlights {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -116,25 +117,266 @@ main {
     margin-top: 15%;
 }
 
-#highlights h1{
+#highlights h1 {
     font-size: 45px;
     margin-left: 2%;
 
 }
 
-#highlights .link{
+#highlights .link {
     margin-right: 100px;
 
 }
 
 
-#highlights a, i {
+#highlights a,
+i {
     font-size: 20px;
-    color: #0071e3;
     text-decoration: none;
 }
 
 #highlights a:hover {
-    text-decoration:underline;
+    text-decoration: underline;
 }
 
+
+container {
+    padding: 2rem;
+}
+
+.slider-wrapper {
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto;
+}
+
+.slider {
+    display: flex;
+    aspect-ratio: 16 / 9;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    border-radius: 0.5rem;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+
+.slider::-webkit-scrollbar {
+    display: none;
+}
+
+.slider img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+
+}
+
+
+.slider-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    transition: all 0.5s;
+}
+
+.slider-nav a {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: #373232;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+    opacity: 1;
+}
+
+#especification {
+    margin-top: 5%;
+
+}
+
+#details {
+    height: 10vh;
+    backdrop-filter: blur(50px);
+    background-color: rgba(255, 255, 255, 0.5);
+    left: 0;
+    position: sticky;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#details a {
+    text-decoration: none;
+    color: black;
+    margin-left: 15px;
+}
+
+#details button {
+    margin-left: 15px;
+    background-color: #0071e3;
+    color: white;
+    height: 25px;
+    width: 80px;
+    border: none;
+    border-radius: 50px;
+}
+
+/* Grid */
+#grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+}
+
+.grid-template-rows-1 {
+    grid-template-rows: 50px 100px 50px 150px;
+}
+
+
+
+/* Grid Item */
+
+.item {
+    margin: 5px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.item1 {
+    margin: 5px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.item1 img {
+    height: 80%;
+    width: 100%;
+}
+
+.item1 h4 {
+    font-size: 20px;
+}
+
+.item1 p {
+    margin-top: 10px;
+    opacity: 0.7;
+    font-size: 15px;
+    height: 30px;
+    width: 40%;
+    margin-left: 30%;
+}
+
+.item2 img {
+    height: 82%;
+    width: 100%;
+}
+
+.item2 h4 {
+    font-size: 20px;
+    margin-left: 15%;
+}
+
+.item2 p {
+    margin-top: 10px;
+    opacity: 0.7;
+    font-size: 15px;
+    height: 30px;
+    width: 40%;
+    margin-left: 30%;
+}
+
+.container-footer {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer {
+    background-color: rgb(245, 245, 247);
+    padding: 70px 0;
+    margin-top: 10%;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: black;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #807373;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: black;
+    text-decoration: none;
+    font-weight: 300;
+    color: #000000;
+    opacity: 0.6;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: black;
+    padding-left: 8px;
+    opacity: 1;
+}
+
+.footer-col .social-links i {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    opacity: 0.6;
+    color: #000000;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links i:hover {
+    opacity: 1;
+    padding-left: 8px;
+
+
+}
